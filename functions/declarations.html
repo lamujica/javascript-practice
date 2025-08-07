@@ -16,7 +16,13 @@
       }
 
       function capitalize(text) {
-        typeof text === "string" ? console.log(text.toUpperCase()[0]) : console.log("Please enter string type!");
+        if (typeof text === "string") return text.toUpperCase().charAt(0);
+        else "Please enter string type!";
+      }
+
+      function lastLetter(text) {
+        if (typeof text === "string") return text.charAt(text.length - 1);
+        else "Please enter string type!";
       }
     </script>
   </body>
